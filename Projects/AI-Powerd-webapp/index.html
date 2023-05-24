@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Study Software</title>
+    <script src="https://kit.fontawesome.com/3dc533b8c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body> 
+    <div class="background-container">
+    <section>
+        <header>
+            <nav>
+                <nav>
+                    <div class="navbar">
+                        <div class="container nav-container">
+                            <input class="checkbox" type="checkbox" name="" id="" />
+                            <div class="hamburger-lines">
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                            </div>
+                            <div class="logo">
+
+                            </div>
+                            <div class="menu-items bg">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">blogs</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">contact</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Enter topic name">
+                        <button onclick="searchVideos()"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </div>
+
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="hero">
+
+                <div class="video-list" id="video-list">
+    
+                    <div class="videos"></div>
+                </div>
+
+                <h1 class="typing-text">Welcome To  Smart study Software</h1>
+                <p>Personalized learning paths, interactive engagement,<br> and curated courses to transform your
+                    education.</p>
+            </section>
+
+            <section class="features"> 
+               
+                <div class="feature one"  onclick="navigateToTopic('Machine Learning')" >
+                    <h2>Machine  Learning </h2>
+                    <p>Machine learning is a rapidly growing field that has gained immense popularity in recent years. It involves the development of algorithms and models that enable computers to learn and make predictions or decisions without explicit programming.
+                    </p> 
+                    <div class="FurtherLogo" onclick="navigateToTopic('Machine Learning')">
+                        Explore More  <a href=""> <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="feature two" onclick="navigateToTopic('Machine Learning')">
+                    <h2>Web Development</h2>
+                    <p></p>
+                </div>
+                <div class="feature three" onclick="navigateToTopic('Machine Learning')">
+                    <h2>Cloud Computing</h2>
+                    <p></p>
+                </div> 
+                <div class="feature four" onclick="navigateToTopic('Machine Learning')">
+                    <h2>Cyber Security</h2>
+                    <p></p>
+                </div>
+                <div class="feature five" onclick="navigateToTopic('Machine Learning')">
+                    <h2>Data Science & Analytics</h2>
+                    <p></p>
+                </div>
+                <div class="feature six" onclick="navigateToTopic('Machine Learning')">
+                    <h2>Artificial Intelligence</h2>
+                    <p></p>
+               
+          
+          
+            </div> 
+        </section>
+
+
+        <div class="sticky-section">
+            <section class="chatbot">
+                <div class="chatbot-icon">
+                  <img src="chatbot-icon.png" alt="Chatbot Icon">
+                </div>
+                <div class="chatbot-container">
+                  <div class="chatbot-header">
+                    <h3>Have a question? Chat with our AI Assistant!</h3>
+                  </div>
+                  <div class="chatbot-messages">
+                    <!-- Chatbot messages here -->
+                  </div>
+                  <div class="chatbot-input">
+                    <input type="text" placeholder="Type your message...">
+                    <button>Send</button>
+                  </div>
+                </div>
+              </section>
+          
+        </main>
+  </div>
+        <footer>
+            <p>&copy; 2023 AI Study Software. All rights reserved.</p>
+        </footer>
+
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="script.js"></script> 
+        <script src="sticky.js"></script>
+    </section>
+
+
+</body>
+
+</html>

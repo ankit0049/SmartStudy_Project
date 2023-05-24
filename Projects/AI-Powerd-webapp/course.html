@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infinite Animated Text</title>
+    <style>
+        .animated-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 6s infinite;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span class="animated-text">I am developer</span>
+    </h1>
+
+    <script>
+        const animatedText = document.querySelector('.animated-text');
+        const textContent = animatedText.textContent;
+
+        setInterval(() => {
+            animatedText.textContent = '';
+            setTimeout(() => {
+                animatedText.textContent = textContent;
+            }, 0);
+        }, 6000);
+    </script>
+</body>
+</html>
