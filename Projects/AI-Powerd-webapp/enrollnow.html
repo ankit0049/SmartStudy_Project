@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playlist Page</title>
+  <style>
+    /* Add your custom CSS styles here */
+    .playlist-item {
+      margin-bottom: 20px;
+    }
+    .thumbnail {
+      width: 120px;
+      height: 90px;
+    }
+    .title {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Playlist Page</h1>
+
+  <div id="playlist">
+    <!-- Placeholder for playlist items -->
+  </div>
+
+  <script>
+    // Sample playlist data
+    const playlistItems = [
+      {
+        id: '1',
+        title: 'Video 1',
+        thumbnail: 'https://example.com/thumbnail1.jpg',
+        duration: '5:32'
+      },
+      {
+        id: '2',
+        title: 'Video 2',
+        thumbnail: 'https://example.com/thumbnail2.jpg',
+        duration: '3:45'
+      },
+      {
+        id: '3',
+        title: 'Video 3',
+        thumbnail: 'https://example.com/thumbnail3.jpg',
+        duration: '8:17'
+      }
+      // Add more playlist items as needed
+    ];
+
+    // Function to generate playlist HTML
+    function generatePlaylist() {
+      const playlistContainer = document.getElementById('playlist');
+
+      playlistItems.forEach(item => {
+        const playlistItem = document.createElement('div');
+        playlistItem.className = 'playlist-item';
+
+        const thumbnail = document.createElement('img');
+        thumbnail.className = 'thumbnail';
+        thumbnail.src = item.thumbnail;
+
+        const title = document.createElement('div');
+        title.className = 'title';
+        title.textContent = item.title;
+
+        const duration = document.createElement('div');
+        duration.textContent = item.duration;
+
+        playlistItem.appendChild(thumbnail);
+        playlistItem.appendChild(title);
+        playlistItem.appendChild(duration);
+
+        playlistContainer.appendChild(playlistItem);
+      });
+    }
+
+    // Generate the playlist on page load
+    window.onload = generatePlaylist;
+  </script>
+</body>
+</html>

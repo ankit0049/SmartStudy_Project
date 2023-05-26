@@ -9,127 +9,316 @@
     <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body> 
+<body>
     <div class="background-container">
-    <section>
-        <header>
-            <nav>
+        <section>
+            <header>
                 <nav>
-                    <div class="navbar">
-                        <div class="container nav-container">
-                            <input class="checkbox" type="checkbox" name="" id="" />
-                            <div class="hamburger-lines">
-                                <span class="line line1"></span>
-                                <span class="line line2"></span>
-                                <span class="line line3"></span>
-                            </div>
-                            <div class="logo">
 
-                            </div>
-                            <div class="menu-items bg">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">blogs</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">contact</a></li>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courseai/course.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="search-bar">
+                            <input type="text" id="search-input" placeholder="Enter topic name">
+                            <button onclick="searchVideos()">Search</button>
+                        </div>
+
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+
+                <section class="hero">
+
+                    <div class="video-list" id="video-list">
+
+                        <div class="videos"></div>
+                    </div>
+
+                    <h1 class="typing-text">Welcome To Smart study Software</h1>
+                    <p>Personalized learning paths, interactive engagement,<br> and curated courses to transform your
+                        education.</p>
+                </section>
+                <div class="Mydiv">
+                    <section class="features">
+                        <div class="all">
+                            <div class="feature one " onclick="openPopup('popup1')">
+                                <h2>Machine Learning </h2>
+                                <p>Machine learning is a rapidly growing field that has gained immense popularity in
+                                    recent years.
+                                </p>
+                                <div class="FurtherLogo">
+                                    Explore More <a href=""> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
+                        <div class="all">
+                            <div class="feature two" onclick="openPopup('popup2')">
+                                <h2>Web Development</h2>
+                                <p>Machine learning is a rapidly growing field that has gained immense popularity in
+                                    recent years.
+                                </p>
+                                <div class="FurtherLogo">
+                                    Explore More <a href=""> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="all">
+                            <div class="feature three" onclick="openPopup('popup3')">
+                                <h2>Cloud Computing</h2>
+                                <p>Machine learning is a rapidly growing field that has gained immense popularity in
+                                    recent years.
+                                </p>
+                                <div class="FurtherLogo">
+                                    Explore More <a href=""> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="all">
+                            <div class="feature four" onclick="openPopup('popup4')">
+                                <h2>Cyber Security</h2>
+                                <p>Machine learning is a rapidly growing field that has gained immense popularity in
+                                    recent years.
+                                </p>
+                                <div class="FurtherLogo">
+                                    Explore More <a href=""> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="all">
+                            <div class="feature five" onclick="openPopup('popup5')">
+                                <h2>Data Science & Analytics</h2>
+                                <p>Machine learning is a rapidly growing field that has gained immense popularity in
+                                    recent years.
+                                </p>
+                                <div class="FurtherLogo">
+                                    Explore More <a href=""> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="all">
+                            <div class="feature six" onclick="openPopup('popup6')">
+                                <h2>Artificial Intelligence</h2>
+                                <p>Machine learning is a rapidly growing field that has gained immense popularity in
+                                    recent years.
+                                </p>
+                                <div class="FurtherLogo">
+                                    Explore More <a href=""> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div id="popup1" class="popup">
+                                <div class="popup-content">
+                                    <h2>Machine Learning</h2>
+                                    <div class="ML">
+                                        <div class="first">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/vP06aMoz4v8"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="second">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/fSytzGwwBVw"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <button onclick="closePopup(1)">Back</button>
+                                </div>
+                            </div>
+                            <div id="popup2" class="popup">
+                                <div class="popup-content">
+                                    <h2>Machine Learning</h2>
+                                    <div class="ML">
+                                        <div class="first">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/vP06aMoz4v8"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="second">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/fSytzGwwBVw"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <button onclick="closePopup(2)">Back</button>
+                                </div>
+                            </div> 
+
+
+
+                            <div id="popup3" class="popup">
+                                <div class="popup-content">
+                                    <h2>Machine Learning</h2>
+                                    <div class="ML">
+                                        <div class="first">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/vP06aMoz4v8"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="second">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/fSytzGwwBVw"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <button onclick="closePopup(3)">Back</button>
+                                </div>
+                            </div> 
+
+
+                            <div id="popup4" class="popup">
+                                <div class="popup-content">
+                                    <h2>Machine Learning</h2>
+                                    <div class="ML">
+                                        <div class="first">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/vP06aMoz4v8"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="second">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/fSytzGwwBVw"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <button onclick="closePopup(4)">Back</button>
+                                </div>
+                            </div> 
+
+                            <div id="popup5" class="popup">
+                                <div class="popup-content">
+                                    <h2>Machine Learning</h2>
+                                    <div class="ML">
+                                        <div class="first">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/vP06aMoz4v8"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="second">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/fSytzGwwBVw"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <button onclick="closePopup(5)">Back</button>
+                                </div>
+                            </div> 
+
+                            <div id="popup6" class="popup">
+                                <div class="popup-content">
+                                    <h2>Machine Learning</h2>
+                                    <div class="ML">
+                                        <div class="first">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/vP06aMoz4v8"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="second">
+                                            <iframe width="350" height="315"
+                                                src="https://www.youtube.com/embed/fSytzGwwBVw"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <button onclick="closePopup(6)">Back</button>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+                <section class="chatbot">
+                    <div class="chatbot-container">
+                        <div class="chatbot-header">
+                            <h3>Have a question? Chat with our AI Assistant!</h3>
+                        </div>
+                        <div id="chatContainer" class="chat-container"></div>
+                        <input id="userInput" type="text" placeholder="Type your message..."
+                            onkeydown="handleUserInput(event)">
                     </div>
-                </nav>
-
-                <ul>
-
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="course.html">Courses</a></li>
-                    <li><a href="progress.html">Progress</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <div class="search-bar">
-                        <input type="text" id="search-input" placeholder="Enter topic name">
-                        <button onclick="searchVideos()"><i class="fa-regular fa-magnifying-glass"></i></button>
+                </section>
+                <div class="login-page">
+                    <div class="form">
+                      <div class="login" id="loginSection">
+                        <div class="login-header">
+                          <h3>LOGIN</h3>
+                          <p>Please enter your credentials to login.</p>
+                        </div>
+                      </div>
+                      <form class="login-form" id="loginForm">
+                        <input type="text" placeholder="username" id="usernameInput"/>
+                        <input type="password" placeholder="password" id="passwordInput"/>
+                        <button id="loginButton">login</button>
+                        <p class="message">Not registered? <a href="#">Create an account</a></p>
+                      </form>
+                      <div class="login-success" id="loginSuccessSection">
+                        <h4>Successful Login!</h4>
+                        <p><span id="loggedInUser"></span></p>
+                      </div>
                     </div>
+                  </div>
+                  
+            </main>
+    </div> 
 
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-
-            <section class="hero">
-
-                <div class="video-list" id="video-list">
     
-                    <div class="videos"></div>
-                </div>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            Your Logo
+          </div>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="footer-social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-text">
+          &copy; 2023 Your Company. All rights reserved.
+        </div>
+      </footer>
 
-                <h1 class="typing-text">Welcome To  Smart study Software</h1>
-                <p>Personalized learning paths, interactive engagement,<br> and curated courses to transform your
-                    education.</p>
-            </section>
-
-            <section class="features"> 
-               
-                <div class="feature one"  onclick="navigateToTopic('Machine Learning')" >
-                    <h2>Machine  Learning </h2>
-                    <p>Machine learning is a rapidly growing field that has gained immense popularity in recent years. It involves the development of algorithms and models that enable computers to learn and make predictions or decisions without explicit programming.
-                    </p> 
-                    <div class="FurtherLogo" onclick="navigateToTopic('Machine Learning')">
-                        Explore More  <a href=""> <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="feature two" onclick="navigateToTopic('Machine Learning')">
-                    <h2>Web Development</h2>
-                    <p></p>
-                </div>
-                <div class="feature three" onclick="navigateToTopic('Machine Learning')">
-                    <h2>Cloud Computing</h2>
-                    <p></p>
-                </div> 
-                <div class="feature four" onclick="navigateToTopic('Machine Learning')">
-                    <h2>Cyber Security</h2>
-                    <p></p>
-                </div>
-                <div class="feature five" onclick="navigateToTopic('Machine Learning')">
-                    <h2>Data Science & Analytics</h2>
-                    <p></p>
-                </div>
-                <div class="feature six" onclick="navigateToTopic('Machine Learning')">
-                    <h2>Artificial Intelligence</h2>
-                    <p></p>
-               
-          
-          
-            </div> 
-        </section>
-
-
-        <div class="sticky-section">
-            <section class="chatbot">
-                <div class="chatbot-icon">
-                  <img src="chatbot-icon.png" alt="Chatbot Icon">
-                </div>
-                <div class="chatbot-container">
-                  <div class="chatbot-header">
-                    <h3>Have a question? Chat with our AI Assistant!</h3>
-                  </div>
-                  <div class="chatbot-messages">
-                    <!-- Chatbot messages here -->
-                  </div>
-                  <div class="chatbot-input">
-                    <input type="text" placeholder="Type your message...">
-                    <button>Send</button>
-                  </div>
-                </div>
-              </section>
-          
-        </main>
-  </div>
-        <footer>
-            <p>&copy; 2023 AI Study Software. All rights reserved.</p>
-        </footer>
-
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="script.js"></script> 
-        <script src="sticky.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+    <script src="sticky.js"></script>
     </section>
 
 
